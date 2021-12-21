@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  title = 'PROJECT';
+  loadedFeature = 'recipe';
+  onNavigate(feature: string) {
+    console.log("navigating with "+feature);
+    this.loadedFeature = feature;
+  }
+}
